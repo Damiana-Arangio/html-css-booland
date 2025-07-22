@@ -6,3 +6,12 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+.container {
+    max-width: 80%;
+    margin: 0 auto;                                     /* Centratura orizzontale contanitore principale pagina*/
+}
