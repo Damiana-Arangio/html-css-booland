@@ -17,32 +17,14 @@ body {
 /*! CLASSI RIUTILIZZABILI */
 
 /** SPAZIATURE GENERALI */
-.margin-bottom {
-    margin-bottom: 20px;
-}
-.gap {
-    gap: 12px;
+.padding-top-bottom {
+    padding: 60px 0;
 }
 
 /** CONTENITORE PAGINA */
 .container {
     max-width: 70%;
     margin: 0 auto;                                             /* Centratura orizzontale contanitore principale pagina */
-}
-
-/** REGOLE FLEXBOX */
-.flex-container-row {
-    display: flex;
-}
-
-.space-between {
-    justify-content: space-between;
-}
-.cross-axis-center {
-    align-items: center;
-}
-.wrap {
-    flex-wrap: wrap;                                            /* Manda gli item a capo quando non c'è più spazio nel contenitore */
 }
 
 /** STILE TESTO */
@@ -61,8 +43,35 @@ body {
     font-weight: bold;
 }
 
+
+/*! REGOLE FLEXBOX */
+.flex-container-row {
+    display: flex;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.cross-axis-center {
+    align-items: center;
+}
+
+.wrap {
+    flex-wrap: wrap;                                        /* Manda gli item a capo quando non c'è più spazio nel contenitore */
+}
+
+.gap {
+    gap: 12px;
+}
+
+
 /*! INTESTAZIONE PAGINA */
 header {
+    position: fixed;
+    top: 0;
+    z-index: 1;                                             /* Mantiene l'header sopra agli altri elementi che di default hanno x-index: 0; */
+    width: 100%;
     background-color: rgb(245, 101, 12);
 }
 
@@ -163,6 +172,10 @@ article {
 
 /*! PIE' DI PAGINA */
 footer {
+    position: fixed;
+    bottom: 0;
+    z-index: 1;
+    width: 100%;
     background-color: black;
 }
 
