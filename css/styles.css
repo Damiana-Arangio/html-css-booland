@@ -10,15 +10,23 @@
 /** STILE PRINCIPALE TESTO */
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 10px;
+    font-size: 13px;
 }
 
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
 
 /*! CLASSI RIUTILIZZABILI */
 
 /** SPAZIATURE GENERALI */
 .padding-top-bottom {
-    padding: 60px 0;
+    padding: 80px 0;
 }
 
 /** CONTENITORE PAGINA */
@@ -33,7 +41,7 @@ body {
 }
 
 .font-small {
-    font-size: 9px;
+    font-size: 11px;
 }
 .color-red {
     color: red;
@@ -76,12 +84,12 @@ header {
 }
 
 nav {
-    height: 30px;
-
-    /* Debug */
-    background-color: rgb(165, 165, 104);
+    height: 45px;
 }
 
+.logo {
+    width: 80px;
+}
 
 /*! CONTENUTO PRINCIPALE */
 
@@ -126,9 +134,9 @@ article {
 
 .icona-preferiti {
     background-color: white;
-    font-size: 16px;
-    width: 20px;
-    height: 20px;
+    font-size: 22px;
+    width: 30px;
+    height: 30px;
     text-align: center;
 
     /* Posizionamento icona preferiti */
