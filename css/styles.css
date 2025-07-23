@@ -40,11 +40,20 @@ a {
     color: white;
 }
 
-.font-small {
-    font-size: 11px;
-}
-.color-red {
+.text-red {
     color: red;
+}
+
+.text-end {
+    text-align: end;
+}
+
+.font-small {
+    font-size: 12px;
+}
+
+.font-extra-small {
+    font-size: 10px;
 }
 
 .font-bold {
@@ -189,7 +198,4 @@ footer {
 
 footer > div {
     height: 50px;
-
-    /* Debug */
-    background-color: aquamarine;
 }
